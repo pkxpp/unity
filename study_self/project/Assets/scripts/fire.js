@@ -11,5 +11,6 @@ function Update () {
 	var z:float = Input.GetAxis("Vertical") * Time.deltaTime * speed;
 	transform.Translate(x, 0, z);
 	
-	print(x);
+	if (z != 0)
+		print("js");
 }
